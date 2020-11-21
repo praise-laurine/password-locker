@@ -40,7 +40,13 @@ class Credentials:
         self.user_ame = username
         self.password = password
         self.account = account
-               
+
+     def save_credential(self):
+        """
+        method to store a new credential to the credentials list
+        """
+        Credentials.credentials_list.append(self)
+    
     @classmethod
    
     def find_by_username(cls,username):
