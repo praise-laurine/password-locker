@@ -31,9 +31,18 @@ class Credentials:
     Create credential class that generates new instances of credentials
     """
 
-    credentials_list = []        
+    credentials_list = [] 
 
+     def __init__(self,account,userName, password):
+        """
+        method that defines user credentials to be stored
+        """
+        self.user_ame = username
+        self.password = password
+        self.account = account
+               
     @classmethod
+   
     def find_by_username(cls,username):
         '''
         method that takes in a username and returns a user that matches the username
