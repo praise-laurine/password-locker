@@ -37,7 +37,7 @@ class Credentials:
         """
         method that defines user credentials to be stored
         """
-        self.user_ame = username
+        self.user_name = username
         self.password = password
         self.account = account
 
@@ -46,36 +46,42 @@ class Credentials:
         method to store a new credential to the credentials list
         """
         Credentials.credentials_list.append(self)
+
+    def delete_credentials(self):
+        """
+        delete_credentials method that deletes an account credentials from the credentials_list
+        """
+        Credentials.credentials_list.remove(self)    
     
     @classmethod
    
-    def find_by_username(cls,username):
+    def find_credential_by_username(cls,username):
         '''
-        method that takes in a username and returns a user that matches the username
+        method that takes in a username and returns a credential that matches the username
         '''
 
-        for user in cls.user_list:
-            if user.user_name == username:
-                return user
+        for credential in cls.credentials_list:
+            if credential.user_name == username:
+                return credential
 
     @classmethod
-    def user_exist(cls,username):
+    def credential_exist(cls,username):
         '''
         Method that checks if a user exists from the user_list
         '''
 
-        for user in cls.user_list:
+        for credential in cls.credentials_list:
             if user_name == username:
                 return True
 
         return False
 
     @classmethod
-    def display_users(cls):
+    def display_credentials(cls):
         '''
         method that returns the user list
         '''
-        return cls.user_list
+        return cls.credentials_list
 
 
 
