@@ -31,10 +31,23 @@ class User:
         '''
         method that takes in a username and returns a user that matches the username
         '''
-        
+
         for user in cls.user_list:
             if user.user_name == username:
-                return user   
+                return user
+
+    @classmethod
+    def user_exist(cls,username):
+        '''
+        Method that checks if a user exists from the user_list
+        '''
+
+        for user in cls.user_list:
+            if user_name == username:
+                return True
+
+        return False        
+
 
         
 
