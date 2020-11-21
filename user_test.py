@@ -25,4 +25,43 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user.save_user()  
         self.assertEqual(len(User.user_list)1,)
-             
+
+class TestCredentials(unittest.TestCase):
+    '''
+    Test class that defines test cases for the credentials class behaviours
+    '''
+    def setUp(self):
+        '''
+        Set Up method to run before each individual test case
+        '''
+        self.new_credential = Credentials("PraiseLaurine","Test435s","gmail")
+
+    def test_init_(self):
+        '''
+        test_init test case to test if the credentials object is initialized properly
+        '''
+        self.assertEqual(self.new_credential.user_name,"PraiseLaurine")
+        self.assertEqual(self.new_credential.password,"Test435s")
+        self.assertEqual(self.new_credential.account,"gmail")
+
+    def test_save_credential(self):
+        '''
+        test_save_credential test case to test if the credential object is saved into the credential list
+        '''
+        self.new_credential.save_credential() 
+        self.assertEqual(len(Credentials.credential_list),1)
+
+
+
+
+
+
+   
+
+
+
+
+
+if __name__==  '__main__':
+    unittest.main()
+               
