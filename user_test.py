@@ -49,7 +49,7 @@ class TestCredentials(unittest.TestCase):
         test_save_credential test case to test if the credential object is saved into the credential list
         '''
         self.new_credential.save_credential() 
-        self.assertEqual(len(Credentials.credential_list),1)
+        self.assertEqual(len(Credentials.credentials_list),1)
 
 
 
