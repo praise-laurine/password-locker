@@ -7,7 +7,7 @@ class User:
     user_list = []
 
     def __init__(self,user_name,password):
-        self.user_name=user_name
+        self.user_name=username
         self.password=password
         
     def save_user(self):
@@ -25,6 +25,16 @@ class User:
         '''
 
         User.user_list.remove(self)
+
+    @classmethod
+    def find_by_username(cls,username):
+        '''
+        method that takes in a username and returns a user that matches the username
+        '''
+        
+        for user in cls.user_list:
+            if user.user_name == username:
+                return user   
 
         
 
