@@ -21,10 +21,17 @@ class User:
     def delete_user(user):
 
         '''
-        delete_user method deletes a saved user from the user_list
+        delete_user method deletes a saved user account from the user_list
         '''
 
         User.user_list.remove(self)
+
+class Credentials:
+    """
+    Create credential class that generates new instances of credentials
+    """
+
+    credentials_list = []        
 
     @classmethod
     def find_by_username(cls,username):
