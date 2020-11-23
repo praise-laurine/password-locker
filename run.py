@@ -91,6 +91,7 @@ def main():
             break
             if password_new == 'gp':
                 password = generate_password()
+                # print("enter password")
                 break
             else:
                 print("Incorrect password, please try again.")

@@ -53,5 +53,5 @@ The app will open on terminal
 
 ### License
 *MIT licence*
-Copyright (c) sept 2020 **laurine praise**
+Copyright (c) Nov 2020 **laurine praise**
 
