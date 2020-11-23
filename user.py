@@ -1,3 +1,5 @@
+import random
+import string
 class User:
     
     """
@@ -33,7 +35,7 @@ class Credentials:
 
     credentials_list = [] 
 
-     def __init__(self,account,userName, password):
+    def __init__(self,account,userName, password):
         """
         method that defines user credentials to be stored
         """
@@ -41,7 +43,7 @@ class Credentials:
         self.password = password
         self.account = account
 
-     def save_credential(self):
+    def save_credential(self):
         """
         method to store a new credential to the credentials list
         """
@@ -82,6 +84,12 @@ class Credentials:
         method that returns the user list
         '''
         return cls.credentials_list
+    
+    def generatePassword(stringLength=8):
+        """Generate a random password string of letters and digits"""
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits
+        return ''.join(random.choice(password) for i in range(stringLength))
+    
 
 
 
