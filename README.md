@@ -5,7 +5,7 @@
 ## Description
 This project is a python application that manages login and signup credentials of a person for various accounts i.e. username and passwords for each account. It also stores the passwords and generates a unique password for a user if they do not want to generate new passwords by themselves.
 
-## User Guidlines
+## User Guidelines
 The users should be able to:
 - Create an account for the application by signing up or log in to the account
 - Store existing account details
