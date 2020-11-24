@@ -35,7 +35,7 @@ The users should be able to:
 The app will open on terminal 
 2.  Follow and answer the prompts that will be displayed to use the application.
 
-## How the project works
+## Behaviour Driven Development(BDD)
 | Behaviour | Input | Output |
 | ------------- |:-------------: |:-------------: |
 | Display project folder in the terminal | **In terminal run: $./run.py** | Hello welcome to password locker! What is your name? (After you enter your name): Apply these commands to continue:CH = create account, |
