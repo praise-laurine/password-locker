@@ -38,12 +38,12 @@ The app will open on terminal
 ## How the project works
 | Behaviour | Input | Output |
 | ------------- |:-------------: |:-------------: |
-| Display project folder in the terminal | **In terminal run: $./run.py** | Hello welcome to password locker! What is your name? (After you enter your name): select a short code to navigate through : ca - Create new Account, Lg - Log in to your account, ep - Enter your own password, gp - generate new password |
-| Display prompt for creating an account | **Enter: ca** | You've created your new account successfully! Your account password is: |
-| Display prompt to login into an account: **Enter: Lg** | Enter the correct username and password to log in | Hello (username)!Welcome to password locker. |
-|  Display prompt for creating a credential | **Enter: CA** |  select a short code to navigate through : nc - new credentrial, dc - display credential, fc - find credential, gs - generate random password, ep - Enter your own password, dc - delete credential, ex - exit the application |
-|  Display prompt for displaying all stored credential | **Enter: dc** | You dont seem to have any credentials yet(when you log in for the first time) |
-| Exit the application | Enter ```ex``` | The application exits |
+| Display project folder in the terminal | **In terminal run: $./run.py** | Hello welcome to password locker! What is your name? (After you enter your name): Apply these commands to continue:CH = create account, |
+| Display prompt for creating an account | **Enter: ch** | Hello, ```username``` You have created your new account successfully! Your account password is: |
+| Display prompt to search for credentials for an account: | **Enter: sc** | Found credential by Account Name: ```search```|
+|  Display prompt for creating a credential | **Enter: nc** to Enter New Credential Details| Your ```accountname``` account has been saved |
+|  Display prompt for displaying all stored credential | **Enter: vc** | You dont seem to have any credentials yet. Please Create One(when you log in for the first time) or Your saved credentials are: |
+| Exit the application | Enter ```ex``` | Goodbye and Thanks for using password locker.Have a nice day! |
 
 ## Technologies 
 * python3.6

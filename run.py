@@ -126,7 +126,7 @@ def main():
                     print('*' * 100)
             else:
                 print('*' * 100)
-                print('You have No Credentials yet. Please Create One')
+                print('You dont seem to have any Credentials yet. Please Create One')
                 print('*' * 100)
         elif short_code == 'dc':
             print('Enter account name to delete...')
