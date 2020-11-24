@@ -35,7 +35,7 @@ class Credentials:
 
     credentials_list = [] 
 
-    def __init__(self,account,userName, password):
+    def __init__(self,account,username, password):
         """
         method that defines user credentials to be stored
         """
@@ -43,7 +43,7 @@ class Credentials:
         self.password = password
         self.account = account
 
-    def save_credential(self):
+    def save_credentials(self):
         """
         method to store a new credential to the credentials list
         """
@@ -57,13 +57,13 @@ class Credentials:
     
     @classmethod
    
-    def find_credential_by_username(cls,username):
+    def find_by_account(cls,account):
         '''
         method that takes in a username and returns a credential that matches the username
         '''
 
         for credential in cls.credentials_list:
-            if credential.user_name == username:
+            if credential.account == account:
                 return credential
 
     @classmethod
